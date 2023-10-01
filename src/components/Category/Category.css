@@ -1,0 +1,14 @@
+.category__container {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.category__container li {
+  width: 93px;
+  height: 93px;
+  border-radius: 15px;
+  background: #eb6a49;
+  box-shadow: 6px 5px 4px 0px rgba(0, 0, 0, 0.33) inset;
+}
+
