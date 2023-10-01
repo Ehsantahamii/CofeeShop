@@ -51,7 +51,7 @@ const categoryItems = [
 
 const Category = () => {
     return (
-        <ul className='category__container grid mx-auto my-[10%]'>
+        <ul className='category__container grid mx-auto my-[6vw]'>
             {
                 categoryItems.map((items) => (
 
@@ -59,9 +59,9 @@ const Category = () => {
                     
                         <li className='category__item p-2 overflow-hidden flex-vr '>
                             <div>
-                                <img src={items.vector} alt={items.enTitle} />
+                                <img src={items.vector} alt={items.enTitle} title={items.faTitle} />
                             </div>
-                            <h4 className='text-[12px] text-[#333] font-bold'>{items.enTitle}</h4>
+                            <h4 className='text-[12px] text-[#fff] font-bold'>{items.enTitle}</h4>
                             <h4 className='text-[10px] text-[#fff] font-light'>{items.faTitle}</h4>
                         </li>
                         
