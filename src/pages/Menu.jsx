@@ -6,16 +6,18 @@ import Logo from '/images/logo.svg';
 
 const Menu = () => {
     return (
-        <section id='menu' className='menu__container text-center flex-vr'>
-            <div >
-                <img src={Logo} alt="logo" />
-            </div>
-            <div>
-                <h2 className='text-4xl font-bold text-white'>menu</h2>
-                <h3 className='text-4xl font-medium text-[#D8602B]'>منو</h3>
+        <section id='menu' className='menu__container w-full text-center g-[15vw] flex-vr'>
+            <div className='flex-vr'>
+                <div className='mx-auto my-14' >
+                    <img src={Logo} alt="logo" className='w-[150px] h-[150px]' />
+                </div>
+                <div>
+                    <h2 className='text-4xl font-bold text-white'>menu</h2>
+                    <h3 className='text-4xl font-medium text-[#D8602B]'>منو</h3>
+                </div>
             </div>
 
-            <Category/>
+            <Category />
 
         </section>
     );

@@ -51,7 +51,7 @@ const categoryItems = [
 
 const Category = () => {
     return (
-        <ul className='category__container grid'>
+        <ul className='category__container grid mx-auto my-[10%]'>
             {
                 categoryItems.map((items) => (
 

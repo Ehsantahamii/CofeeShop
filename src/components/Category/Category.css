@@ -3,6 +3,7 @@
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+  
 }
 .category__container li {
   width: 93px;
@@ -10,5 +11,28 @@
   border-radius: 15px;
   background: #eb6a49;
   box-shadow: 6px 5px 4px 0px rgba(0, 0, 0, 0.33) inset;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
 }
 
+.category__container li:hover {
+  background: #fff;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+
+}
+.category__container li:hover h4{
+    color: #333;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+  
+}
