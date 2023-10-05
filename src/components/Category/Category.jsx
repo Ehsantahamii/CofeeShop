@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Category.css'
+import ColdDrink from '/images/ColdDrinks.svg?url'
 
 const categoryItems = [
     {
@@ -27,21 +28,21 @@ const categoryItems = [
     },
     {
         id: 4,
-        vector: '/images/Shake.svg',
+        vector: '/images/WarmDrinks.svg',
         enTitle: 'Warm Drinks',
         faTitle: 'نوشیدنی‌های گرم',
         route: ""
     },
     {
         id: 5,
-        vector: '/images/Shake.svg',
+        vector: '/images/Hookah.svg',
         enTitle: 'Hookah',
         faTitle: 'قلیان',
         route: ""
     },
     {
         id: 6,
-        vector: '/images/Shake.svg',
+        vector: '/images/BreakFast.svg',
         enTitle: 'Break Fast',
         faTitle: 'صبحانه',
         route: ""
@@ -51,20 +52,23 @@ const categoryItems = [
 
 const Category = () => {
     return (
-        <ul className='category__container grid mx-auto my-[6vw]'>
+        <ul className='category__container grid mx-auto my-[6vw] bg'>
             {
                 categoryItems.map((items) => (
 
-                    <Link to={items.faTitle} key={items.id}>
-                    
-                        <li className='category__item p-2 overflow-hidden flex-vr '>
+                    <Link to={items.faTitle}
+                        key={items.id}
+
+                    >
+
+                        <li className='category__item overflow-hidden p-2 flex-vr '>
                             <div>
                                 <img src={items.vector} alt={items.enTitle} title={items.faTitle} />
                             </div>
                             <h4 className='text-[12px] text-[#fff] font-bold'>{items.enTitle}</h4>
                             <h4 className='text-[10px] text-[#fff] font-light'>{items.faTitle}</h4>
                         </li>
-                        
+
                     </Link>
                 ))
             }
