@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 'animate.css';
 import Category from '../components/Category/Category';
 
 import Logo from '/images/logo.svg';

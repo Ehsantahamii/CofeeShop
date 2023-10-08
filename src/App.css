@@ -6,7 +6,7 @@ body{
   background: #131C2F url('/images/texture.png');
   background-size: auto;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .flex-vr{
