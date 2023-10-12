@@ -1,16 +1,25 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Inter:wght@500;700&display=swap");
+
+* {
   box-sizing: border-box;
+  /* font-family: "Cairo", sans-serif; */
+  font-family: "Inter", sans-serif;
 }
 
-body{
-  background: #131C2F url('/images/texture.png');
+body {
+  background: #131c2f url("/images/texture.png") fixed;
   background-size: auto;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-.flex-vr{
+.flex-vr {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.flex-hz {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

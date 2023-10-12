@@ -1,0 +1,37 @@
+.main-page header{
+    background: #E5C3B0 url('/images/bg-texture1.png');
+}
+.main-page div.main-page-body{
+    background: #131C2F url('/images/bg-texture2.png') fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto;
+
+}
+.main-page h1{
+    text-shadow: 0px 1px 4px rgba(33, 39, 57, 0.80);
+}
+.main-page .experience-bar-div .experience-bar-container div span::before{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    background: var(--primary-orange);
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+
+}
+
+.main-page .experience-bar-div .experience-bar-container div:nth-child(1) span::before{
+    width: 75%;
+}
+.main-page .experience-bar-div .experience-bar-container div:nth-child(2) span::before{
+    width: 50%;
+}
+.main-page .experience-bar-div .experience-bar-container div:nth-child(3) span::before{
+    width: 95%;
+}
