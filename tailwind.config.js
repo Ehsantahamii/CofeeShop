@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      colors:{
+        "primary-orange":"var(--primary-orange)",
+        "black":"var(--black)",
+        "bg-orange":"var(--bg-orange)",
+      }
+
       
     },
   },

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import 'animate.css';
 
 import './Category.css'
 import ColdDrink from '/images/ColdDrinks.svg?url'
@@ -10,7 +11,7 @@ const categoryItems = [
         vector: '/images/Coffe__category.svg',
         enTitle: 'Coffee',
         faTitle: 'قهوه',
-        route: ""
+        route: "قهوه"
     },
     {
         id: 2,
@@ -56,12 +57,11 @@ const Category = () => {
             {
                 categoryItems.map((items) => (
 
-                    <Link to={items.faTitle}
+                    <Link to={items.enTitle}
                         key={items.id}
-
                     >
 
-                        <li className='category__item overflow-hidden p-2 flex-vr '>
+                        <li className='category__item overflow-hidden p-2 flex-vr animate__bounceIn '>
                             <div>
                                 <img src={items.vector} alt={items.enTitle} title={items.faTitle} />
                             </div>

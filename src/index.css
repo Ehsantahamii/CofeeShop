@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-orange: #EB6A49;
+    --black:#333;
+    --bg-orange:#E5C3B0;
+  }
+  

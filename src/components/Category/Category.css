@@ -16,6 +16,7 @@
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
+  --animate-duration: 1.5s;
 }
 
 .category__container li:hover {
@@ -80,4 +81,17 @@ ul a.active::before{
   -moz-transform: translate(-50% , -50%);
   -ms-transform: translate(-50% , -50%);
   -o-transform: translate(-50% , -50%);
+}
+
+
+@media screen and (max-width: 320px) {
+  .category__container{
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  body{
+    overflow: unset;
+    overflow-x: hidden;
+  }
+  
 }
