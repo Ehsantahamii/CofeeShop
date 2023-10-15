@@ -8,7 +8,7 @@ const Page404 = () => {
         <>
         <div className='w-full h-[90vh] flex-vr justify-center gap-3'>
            <h1 className='text-center text-white text-3xl'> No page found!</h1> 
-           <Link to="/منو" className='text-white'>
+           <Link to="/menu" className='text-white'>
            Go Menu
            </Link>
         </div>
