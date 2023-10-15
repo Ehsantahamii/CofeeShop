@@ -57,7 +57,7 @@ const Category = () => {
             {
                 categoryItems.map((items) => (
 
-                    <Link to={items.faTitle}
+                    <Link to={items.enTitle}
                         key={items.id}
                     >
 

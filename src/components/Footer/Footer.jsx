@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
-import home from '/images/home.png?url';
+// import home from '/images/home.png?url';
 import coffee from '/images/coffee.svg?url';
 import sefaresh from '/images/sefaresh.png?url';
 import about from '/images/about.png?url';
@@ -9,6 +10,9 @@ import about from '/images/about.png?url';
 import './Footer.css'
 
 const Footer = () => {
+
+    const state = useSelector(state => state.cartState);
+    
     return (
         <footer className='w-full h-10 fixed bottom-0 bg-[#EB6A49] flex items-center'>
             <ul className='icons-box w-full  flex items-center justify-evenly'>
@@ -28,17 +32,21 @@ const Footer = () => {
 
                 </NavLink>
                 <NavLink
-                    to={'/منو'}
+                    to={'/menu'}
                     className="category__item"
 
                 >
                     <li className="icon cursor-pointer"><img src={coffee} alt="coffee-icon" /></li>
                 </NavLink>
                 <NavLink
-                    to={'/سفارشات'}
+                    to={'/orders'}
                     className="category__item"
                 >
-                    <li className="icon cursor-pointer"><img src={sefaresh} alt="sefaresh-icon" /></li>
+                    <li className="icon cursor-pointe relative"><img src={sefaresh} alt="sefaresh-icon" />
+                        <span className='text-white bg-black py-[2px] px-[6px] rounded-[50%] text-xs absolute top-0 right-0'>
+                            {state.itemsCounter}
+                        </span>
+                    </li>
                 </NavLink>
                 <NavLink
                     to={'/درباره ما'}
@@ -52,4 +60,4 @@ const Footer = () => {
     );
 };
 
-export default Footer
+export default Footer;

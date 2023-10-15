@@ -18,7 +18,7 @@ const MainPage = () => {
                     <h3 className='text-[20px] font-[900]'>
                         تجربه زیباترین لحظه‌ها با ما
                     </h3>
-                    <img src={Logo} alt="Logo" />
+                    <img className='logo' src={Logo} alt="Logo" />
                 </div>
             </header>
             <div className='main-page-body w-full h-auto p-8 pb-14 flex-vr text-white'>

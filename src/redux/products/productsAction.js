@@ -26,7 +26,7 @@ export const fetchProducts = () => {
     axios
       .get("https://aminsheibani.ir/api/products")
       .then((response) => {
-        const products = response.data;
+        const products = response.data.data;
         dispatch(fetchProductsSuccess(products));
       })
       .catch((error) => {
