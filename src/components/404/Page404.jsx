@@ -13,6 +13,7 @@ const Page404 = () => {
            </Link>
         </div>
         <Footer/>
+        
         </>
     );
 };
