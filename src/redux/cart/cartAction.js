@@ -1,4 +1,8 @@
+import { toast } from "react-toastify";
+
+
 const addItem = product => {
+    toast.success("سفارش اضافه شد")
     return {
         type: "ADD_ITEM",
         payload: product
@@ -13,6 +17,8 @@ const increaseItem = product => {
 }
 
 const removeItem = product => {
+    toast.error("سفارش حذف شد")
+
     return {
         type: "REMOVE_ITEM",
         payload: product

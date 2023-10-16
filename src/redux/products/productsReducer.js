@@ -16,6 +16,7 @@ const productsReducer = (state = initialState, action) => {
                 loading: false,
                 products: action.payload
             }
+            // localStorage.setItem('items',action.payload)
         case "FETCH_PRODUCTS_FAILURE":
             return {
                 loading: false,
