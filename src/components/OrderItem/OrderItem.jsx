@@ -5,6 +5,7 @@ const OrderItem = (props) => {
 
     const dispatch = useDispatch();
     const {name , price , quantity} =props.data;
+    console.log(typeof price);
 
     return (
         <div className='orders-container w-full h-2/3 py-[30px] text-white text-[24px] font-bold  flex-hz'>

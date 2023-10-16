@@ -1,4 +1,6 @@
 import axios from "axios";
+import { toast } from "react-toastify";
+
 
 const fetchProductsRequest = () => {
   return {
@@ -14,6 +16,7 @@ const fetchProductsSuccess = (products) => {
 };
 
 const fetchProductsFailure = (error) => {
+  toast.error("داده ای یافت نشد !")
   return {
     type: "FETCH_PRODUCTS_FAILURE",
     payload: error,
