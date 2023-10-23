@@ -1,6 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
+import { priceFormat } from '../helper/functions';
+
 const OrderItem = (props) => {
 
     const dispatch = useDispatch();
@@ -8,9 +10,9 @@ const OrderItem = (props) => {
     console.log(typeof price);
 
     return (
-        <div className='orders-container w-full h-2/3 py-[30px] text-white text-[24px] font-bold  flex-hz'>
+        <div className='orders-container w-full h-2/3 py-[30px] text-white text-[24px] md:text-[32px] font-bold  flex-hz'>
             <aside className='w-1/2 h-full  border-r-2 flex-vr'>
-                <h3>{price}</h3>
+                <h3>{priceFormat(price)}</h3>
             </aside>
             <aside className='w-1/2 h-full  border-l-2 flex-vr'>
                 <div className='flex-hz justify-between gap-5'>

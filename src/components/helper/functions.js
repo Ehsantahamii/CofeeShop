@@ -11,6 +11,14 @@ const quantityCount = (state, id) => {
     }
 }
 
+const priceFormat = (value) => {
+    const formatValue =Intl.NumberFormat("en-us" , {
+        notation: "standard",
+        maximumFractionDigits:3,
+
+    }).format(value);
+    return formatValue;
+ };
 
 
-export {isInCart , quantityCount};
+export {isInCart , quantityCount , priceFormat};
