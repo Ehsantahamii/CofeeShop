@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import 'animate.css';
 
 import './Category.css'
-import ColdDrink from '/images/ColdDrinks.svg?url'
 
 const categoryItems = [
     {
@@ -53,7 +52,7 @@ const categoryItems = [
 
 const Category = () => {
     return (
-        <ul className='category__container grid mx-auto my-[6vw] bg'>
+        <ul className='category__container grid mx-auto mb-[30vw] mt-[10vw] md:overflow-y-hidden'>
             {
                 categoryItems.map((items) => (
 
@@ -61,12 +60,12 @@ const Category = () => {
                         key={items.id}
                     >
 
-                        <li className='category__item overflow-hidden p-2 flex-vr animate__bounceIn '>
-                            <div>
-                                <img src={items.vector} alt={items.enTitle} title={items.faTitle} />
+                        <li className='category__item w-[93px] md:w-[180px] h-[93px] md:h-[170px] overflow-hidden p-2  rounded-[15px] md:rounded-[28px] flex-vr'>
+                            <div className='md:w-[76px] md:h-[70px]'>
+                                <img className='w-full h-full' src={items.vector} alt={items.enTitle} title={items.faTitle} />
                             </div>
-                            <h4 className='text-[12px] text-[#fff] font-bold'>{items.enTitle}</h4>
-                            <h4 className='text-[10px] text-[#fff] font-light'>{items.faTitle}</h4>
+                            <h4 className='text-[12px] md:text-[18.5px] text-[#fff] font-bold'>{items.enTitle}</h4>
+                            <h4 className='text-[10px] md:text-[24.5px] text-[#fff] font-light'>{items.faTitle}</h4>
                         </li>
 
                     </Link>

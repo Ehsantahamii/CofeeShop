@@ -8,11 +8,9 @@ const initialState = {
 const sumItems = items => {
     const itemsCounter = items.reduce((total, product) => total + product.quantity, 0);
     const total = items.reduce((total, product) => total + product.price * product.quantity, 0);
-    console.log(typeof itemsCounter);
     return {itemsCounter, total}
 }
 const cartReducer = (state=initialState, action) => {
-    // console.log(action.type)
     switch(action.type) {
         case "ADD_ITEM":
             if (!state.selectedItems.find(item => item.id === action.payload.id)) {
@@ -70,5 +68,6 @@ const cartReducer = (state=initialState, action) => {
             return state;
     }   
 }
+
 
 export default cartReducer;
