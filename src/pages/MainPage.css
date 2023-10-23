@@ -1,10 +1,13 @@
 .main-page header {
   background: #e5c3b0 url("/images/bg-texture1.png");
 }
-.main-page-header .logo{
+/* .main-page-header .logo{
     animation: rotate-infinite 5s linear infinite ;
     -webkit-animation: rotate-infinite 5s linear infinite ;
     animation-delay: 0;
+} */
+.main-page-header .logo:hover{
+  animation-play-state: paused;
 }
 .main-page div.main-page-body {
   background: #131c2f url("/images/bg-texture2.png") fixed;
@@ -70,4 +73,8 @@
     100%{
         width:"";
     }
+}
+
+@media screen and (min-width: 768px){
+
 }
