@@ -4,6 +4,7 @@ import React from 'react';
 import Logo from '/images/logo.svg';
 
 import Slider from '../components/Slider/Slider';
+import ArticlesSlider from '../components/ArticlesSlider/ArticlesSlider';
 import InstagramPage from '../components/InstagramPage/InstagramPage';
 
 import './MainPage.css'
@@ -32,6 +33,8 @@ const MainPage = () => {
                     </p>
                 </div>
 
+
+                <ArticlesSlider />
 
                 <div className='experience-bar-div block w-full mb-20 '>
                     <h3 className='md:text-2xl font-bold'>تجربه ما در ارائه خدمات به شما !</h3>

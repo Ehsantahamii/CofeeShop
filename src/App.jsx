@@ -10,6 +10,7 @@ import MainPage from './pages/MainPage'
 import Menu from './pages/Menu'
 import ProductCoffee from './pages/ProductCoffee';
 import OrderBox from './pages/OrderBox';
+import ContactUs from './pages/ContactUs';
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="menu/coffee" element={<ProductCoffee />} />
         <Route path="/orders" element={<OrderBox />} />
+        <Route path="/contact-us" element={<ContactUs />} />
 
 
       </Routes>

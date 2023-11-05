@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@neshan-maps-platform/react-openlayers": "^2.0.16",
     "ajax": "^0.0.4",
     "animate.css": "^4.1.1",
     "axios": "^1.5.1",

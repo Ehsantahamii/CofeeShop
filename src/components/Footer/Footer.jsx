@@ -56,7 +56,7 @@ const Footer = () => {
                     </li>
                 </NavLink>
                 <NavLink
-                    to={'/درباره ما'}
+                    to={'/contact-us'}
                     className="category__item"
                 >
 

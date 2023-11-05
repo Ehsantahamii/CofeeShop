@@ -60,7 +60,7 @@ const Category = () => {
 
 
                     <Link to='/menu/coffee'>
-                        <li key={items.id} className='category__item w-[93px] md:w-[180px] h-[93px] md:h-[170px] overflow-hidden p-2  rounded-[15px] md:rounded-[28px] flex-vr'>
+                        <li key={items.id} className='category__item w-[93px] md:w-[180px] h-[93px] md:h-[170px] overflow-hidden p-2  rounded-[15px] md:rounded-[28px] flex-vr animate__bounceIn'>
                             <div className='w-[20px] h-[37px] md:w-[76px] md:h-[70px]'>
                                 <img className='w-full h-full' src={items.vector} alt={items.enTitle} title={items.faTitle} />
                             </div>

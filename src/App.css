@@ -3,13 +3,14 @@
 * {
   box-sizing: border-box;
   /* font-family: "Cairo", sans-serif; */
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
 }
 
 body {
   background: #131c2f url("/images/texture.png") fixed;
   background-size: auto;
   width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 
