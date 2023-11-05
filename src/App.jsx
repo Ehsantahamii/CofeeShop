@@ -33,7 +33,7 @@ function App() {
         <Route path="*" element={<Page404 />} />
         <Route path="" element={<MainPage />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/menu/coffee" element={<ProductCoffee />} />
+        <Route path="menu/coffee" element={<ProductCoffee />} />
         <Route path="/orders" element={<OrderBox />} />
 
 
